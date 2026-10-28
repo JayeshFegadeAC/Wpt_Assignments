@@ -1,0 +1,62 @@
+1. Client-Server Step-by-Step:
+   - Step 1: User enters URL in browser. Browser resolves domain name via DNS to server IP address.
+   - Step 2: Browser opens TCP connection and sends HTTP GET request to web server.
+   - Step 3: Server processes request, executes application logic, queries database if needed, and builds HTTP response.
+   - Step 4: Server sends HTTP response (HTML, CSS, assets) back to browser with status code 200 OK.
+   - Step 5: Browser parses HTML/CSS, constructs DOM, and renders the webpage on screen.
+   - Location of Logic & Database: Application logic (backend server scripts) and the Database sit on the remote web host/server side.
+
+   [ Browser / Client ] ----( 1. HTTP GET Request )----> [ Web Server / App Logic ]
+            ^                                                     |
+            |                                                     v
+   [ Screen Rendering ] <----( 2. HTTP 200 Response )------- [ Database Server ]
+
+2. Contact Form Methods & Status Codes:
+   - Should use POST method because form message contents are submitted securely inside the HTTP request body instead of being visible in the browser URL bar.
+   - If method attribute is left out, HTML forms default to GET method.
+   - Server success status code: 200 OK.
+   - Family of codes for server failure: 5xx family (e.g., 500 Internal Server Error, 502 Bad Gateway).
+
+3. Three Types of CSS & Specificity:
+   - Inline CSS: Written inside an element's 'style' attribute inside HTML tags.
+   - Internal CSS: Written inside a <style> block in the HTML document <head>.
+   - External CSS: Written in a separate .css file linked via <link rel="stylesheet">.
+   - If all three color the same paragraph differently, Inline CSS wins due to highest specificity.
+   - Type used for style shared by 4 pages: External CSS, because it keeps code DRY (Don't Repeat Yourself), maintains consistency, and loads from browser cache.
+
+4. Selectors Precedence:
+   - For <p id="intro" class="note">Hello</p>, the rule for #intro applies.
+   - Full order of precedence from strongest to weakest:
+     #intro (ID selector) > .note (Class selector) > p (Tag selector) > * (Universal selector)
+
+5. Box Model & Border-Box:
+   - Content: Text/media elements inside the box.
+   - Padding: Transparent spacing between content and border (inside the box).
+   - Border: Border line wrapping padding and content.
+   - Margin: Transparent space outside the border separating the box from other elements.
+   - box-sizing: border-box forces padding and border width to be included inside the specified element width and height, preventing box size expansion.
+
+6. JavaScript Engine & Execution:
+   - JS runs inside the web browser on the client side.
+   - JS engine in browser parses and executes JS (e.g., V8 engine in Chrome/Edge, SpiderMonkey in Firefox).
+   - No compiler is needed because JavaScript is an interpreted, Just-In-Time (JIT) compiled scripting language.
+   - Two capabilities JS provides that HTML/CSS cannot:
+     1. Handling interactive event triggers (like click handlers and dynamic form validation).
+     2. Modifying DOM content dynamically and fetching asynchronous background data without reloading pages.
+
+7. Dynamic Typing in JavaScript:
+   - JavaScript is dynamically typed. Writing 'a = 5;' creates a variable storing a Number. Subsequent writing 'a = "hello";' reassigns 'a' to store a String without throwing a type error.
+   - Three primitive data types learned: Number, String, Boolean.
+
+8. CSS Position Values & Offsets:
+   - static: Default element position following normal document layout flow.
+   - relative: Offset from its normal position without affecting layout around it.
+   - absolute: Positioned relative to its nearest non-static positioned parent container.
+   - fixed: Positioned relative to the browser window (viewport) and stays in place while scrolling.
+   - top, left, right, bottom are offset properties used to adjust exact pixel/percentage distance for relative, absolute, or fixed elements.
+
+9. Flex Sharing & Box Alignment:
+   - Container with display: flex and boxes with flex values 1, 2, 1 divides space into 4 parts (1+2+1).
+     Box 1 gets 25% (1/4), Box 2 gets 50% (2/4), Box 3 gets 25% (1/4).
+   - gap: Sets explicit spacing between flex items.
+   - justify-content: center: Centers flex items along the main axis of the container.

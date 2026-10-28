@@ -1,0 +1,170 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e0f2fe, #bae6fd, #7dd3fc);
+    background-attachment: fixed;
+    color: #1e293b;
+}
+
+.login-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    width: 340px;
+    background: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+    padding: 35px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.custom-input {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.custom-input:focus {
+    border-color: #0284c7;
+}
+
+#btn-login {
+    width: 100%;
+    padding: 10px;
+    background-color: #0284c7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#btn-login:hover {
+    background-color: #0369a1;
+}
+
+.signup-link {
+    margin-top: 20px;
+}
+
+.no-underline {
+    text-decoration: none;
+    color: #0284c7;
+    font-size: 14px;
+}
+
+.portal-nav {
+    background-color: #0f172a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: center;
+}
+
+.portal-nav a {
+    color: #f8fafc;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.portal-content {
+    max-width: 800px;
+    margin: 30px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    color: #0369a1;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+label.inline {
+    display: inline;
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 9px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+}
+
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-portal {
+    padding: 10px 22px;
+    background: #0284c7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-portal:hover {
+    background: #0369a1;
+}
+
+.btn-reset {
+    background: #64748b;
+}
+
+.directory-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.directory-table th, .directory-table td {
+    border: 1px solid #cbd5e1;
+    padding: 10px;
+    text-align: left;
+}
+
+.directory-table th {
+    background-color: #f1f5f9;
+}
+
+.total-summary {
+    margin-top: 15px;
+    font-weight: bold;
+}

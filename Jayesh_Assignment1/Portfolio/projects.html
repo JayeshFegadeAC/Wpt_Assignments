@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jayesh Fegade - Projects</title>
+    <link rel="stylesheet" href="portfolio-style.css">
+    <!-- Internal CSS block for page-specific project layout -->
+    <style>
+        
+        .projects-wrapper {
+            margin: 110px auto 40px auto;
+            max-width: 1000px;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <header id="main-nav">
+        <div class="logo">Jayesh Fegade</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="hr-portal.html">HR Portal</a>
+            <a href="landing.html">Business Page</a>
+        </nav>
+    </header>
+
+    <main class="projects-wrapper">
+        <h1>Project Directory</h1>
+        
+        <table id="project-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Tech Used</th>
+                    <th>Description</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Medical Image Classification</td>
+                    <td>Python, CNN, OpenCV</td>
+                    <td>CNN-based disease detection system in MRI and X-ray medical scans.</td>
+                    <td><a href="https://github.com" target="_blank">Repository</a></td>
+                </tr>
+                <tr>
+                    <td>Soil Water Content Prediction</td>
+                    <td>Python, Scikit-learn</td>
+                    <td>Multi-depth soil moisture forecasting system for precision agriculture.</td>
+                    <td><a href="https://github.com" target="_blank">Repository</a></td>
+                </tr>
+                <tr>
+                    <td>HR Management Portal</td>
+                    <td>HTML5, CSS3, Flexbox</td>
+                    <td>Employee directory and new joiner onboarding portal.</td>
+                    <td><a href="hr-portal.html">Live Demo</a></td>
+                </tr>
+                <tr>
+                    <td>Local Business Landing Page</td>
+                    <td>HTML5, Modern CSS</td>
+                    <td>Promotional landing page featuring responsive service pricing cards.</td>
+                    <td><a href="landing.html">Live Demo</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 style="margin-top: 40px; margin-bottom: 20px;">Top Featured Projects</h2>
+        
+            <div class="card flex-grow-2">
+                <h3>Medical Image Classifier</h3>
+                <p>Convolutional Neural Network model evaluating medical X-ray and MRI scans for accurate diagnosis assistance.</p>
+                <a href="https://github.com" target="_blank" class="btn" style="margin-top:10px;">View Source Code</a>
+            </div>
+            <div class="card flex-grow-1">
+                <h3>Soil Water Forecasting</h3>
+                <p>Machine learning predictive analytics model forecasting soil water content across multiple depth layers.</p>
+                <a href="https://github.com" target="_blank" class="btn" style="margin-top:10px;">View Source Code</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

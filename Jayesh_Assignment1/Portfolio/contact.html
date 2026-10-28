@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jayesh Fegade - Contact</title>
+    <link rel="stylesheet" href="portfolio-style.css">
+</head>
+<body>
+    <header id="main-nav">
+        <div class="logo">Jayesh Fegade</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="hr-portal.html">HR Portal</a>
+            <a href="landing.html">Business Page</a>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <h1>Contact Me</h1>
+        <form action="http://localhost/dummy_submit" method="POST" id="contact-form">
+            <div class="form-group">
+                <label for="user-name">Full Name:</label>
+                <input type="text" id="user-name" name="user_name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="user-email">Email Address:</label>
+                <input type="email" id="user-email" name="user_email" placeholder="name@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contact-date">Preferred Contact Date:</label>
+                <input type="date" id="contact-date" name="contact_date">
+            </div>
+
+            <div class="form-group">
+                <label for="enquiry-type">Enquiry Type:</label>
+                <select id="enquiry-type" name="enquiry_type">
+                    <option value="job">Job Opportunity</option>
+                    <option value="collaboration">Project Collaboration</option>
+                    <option value="general">General Query</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Preferred Contact Mode:</label>
+                <input type="radio" id="m-email" name="contact_mode" value="email" checked>
+                <label for="m-email" style="display:inline;">Email</label>
+                <input type="radio" id="m-phone" name="contact_mode" value="phone">
+                <label for="m-phone" style="display:inline;">Phone</label>
+            </div>
+
+            <div class="form-group">
+                <label for="user-msg">Message:</label>
+                <textarea id="user-msg" name="user_message" rows="4" placeholder="Write your message here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="cv-file">Upload Resume/CV:</label>
+                <input type="file" id="cv-file" name="cv_file">
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent" style="display:inline;">I consent to storing my details for contact purposes.</label>
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+            <button type="reset" class="btn" style="background:#64748b;">Reset</button>
+        </form>
+
+        <h2>City Location Map</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120638.12213793739!2d72.82583955!3d18.980373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce401b22292f%3A0x71ff02f740e6080!2sCDAC%20Mumbai!5e0!3m2!1sen!2sin!4v1700000000000" width="100%" height="250" style="border:0; margin-top:15px;" allowfullscreen="" loading="lazy"></iframe>
+    </main>
+</body>
+</html>

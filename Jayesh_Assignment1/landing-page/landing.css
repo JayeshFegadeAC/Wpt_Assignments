@@ -1,0 +1,122 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    /* Light Blue Gradient Theme */
+    background: linear-gradient(135deg, #e0f2fe, #bae6fd, #7dd3fc);
+    background-attachment: fixed;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Header Navigation */
+.landing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 20px 50px;
+    border-bottom: 2px solid #cbd5e1;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.landing-header .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0284c7;
+}
+
+.nav-links a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #334155;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #0284c7;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: #ffffff;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 60px 30px;
+    border: 2px solid #cbd5e1;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #0f172a;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #475569;
+    margin-bottom: 25px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #0284c7;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #0369a1;
+}
+
+/* Features Container (Flexbox Row) */
+.features-container {
+    display: flex;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
+}
+
+.feature-card {
+    flex: 1;
+    background: #ffffff;
+    border: 2px solid #cbd5e1;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.feature-card h3 {
+    color: #0369a1;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 14px;
+    color: #475569;
+}
+
+/* Footer */
+.landing-footer {
+    text-align: center;
+    background: #0f172a;
+    color: white;
+    padding: 25px;
+    margin-top: 50px;
+    font-size: 14px;
+}
